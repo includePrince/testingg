@@ -9,18 +9,27 @@ html, body {
     overflow-x: hidden;
 }
 
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .main-container header{
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 24px;
+    width: 90%;
+    max-width: 1228px;
     /* border: 2px solid black; */
 }
 
 .main-container header .navbar{
     display: flex;
-    width: 1228px;
-    min-width: 1000px;
+    width: 100%;
+    max-width: 1228px;
     height: 72px;
     align-items: center;
     justify-content: space-between;
@@ -101,8 +110,10 @@ html, body {
     background: #6420F3;
 }
 
+
+
 .middle{
-    
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +125,8 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 713px;
+    width: 45%;
+    max-width: 713px;
     height: 676px;
     /* border: 1px solid pink; */
 }
@@ -122,9 +134,11 @@ html, body {
 .middle .img-container .image1{
     background-image: url(./image1.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 633px;
+    background-size: cover;
+    width: 100%;
+    max-width: 633px;
     height: 566px;
+    max-height: 566px;
     border-radius: 16px;
 }
 
@@ -398,12 +412,14 @@ footer{
     background: var(--Pure-last, #141414);
     /* border: 1px solid red; */
     color: white;
+    width: 100%;
 }
 
 footer .section1{
     display: flex;
     justify-content: space-between;
-    width: 1228px;
+    width: 70%;
+    max-width: 1228px;
     height: 176.69284057617188px;
     /* border: 1px solid red; */
 
@@ -560,12 +576,13 @@ footer .fb-logo{
 
 
 footer .section2{
-    width: 1228px;
     height: 63.99757385253906px;
+    width: 70%;
+    max-width: 1228px;
 }
 
 .section2 .foot{
-    width: 1228px;
+    width: 100%;
     height: 63.99757385253906px;
     display: flex;
     justify-content: space-between;
@@ -626,4 +643,25 @@ footer .section2{
     text-align: center;
     vertical-align: middle;
 
+}
+
+
+
+
+
+
+@media (max-width: 1320px){
+    .middle .img-container{
+        display: none;
+    }
+    footer{
+        height: fit-content;
+        gap: 30px;
+    }
+    footer .section1{
+        flex-wrap: wrap;
+        justify-content: center;
+        height: fit-content;
+        gap: 70px;
+    }
 }
