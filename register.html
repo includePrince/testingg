@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <div class="navbar">
+                <div class="nav-logo">
+                    <div class="logo-img"></div>
+                    <div class="logo-text">STUENCER</div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="about-btn">About Us</button>
+                    <button class="contact-btn">Contact Us</button>
+                    <button class="login-btn">Login</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="middle">
+            <div class="img-container">
+                <div class="image1"></div>
+            </div>
+            <div class="register-form-container">
+
+
+
+
+
+                <div class="register-form">
+                    <div class="intro">
+                        <h3>Create Your Account 🚀</h3>
+                        <p>Start building your digital portfolio and engage with the engineering community.</p>
+                    </div>
+                    <div class="form">
+                        <div class="main-form">
+
+                            <div class="name-section">
+                                <label>Full Name<span style="color: red;">*</span></label>
+                                <div class="full-name-input">
+                                    <input type="text" class="first-name" placeholder="First Name" required/>
+                                    <input type="text" class="last-name" placeholder="Last Name" required/>
+                                </div>
+                            </div>
+
+                            <div class="email-section">
+                                <label>Email<span style="color: red;">*</span></label>
+                                <input type="email" class="email-input" placeholder="Enter your Gmail address" required/>
+                            </div>
+
+                            <div class="clg-webmail-section">
+                                <label>College Webmail<span style="color: red;">*</span></label>
+                                <input type="email" class="clg-webmail-input" placeholder="Enter your College webmail address" required/>
+                            </div>
+
+                            <div class="password-section">
+                                <label>Password<span style="color: red;">*</span></label>
+                                <div class="password-input">
+                                    <input type="password" class="new-pass" placeholder="Create your password" required/>
+                                    <input type="password" class="re-new-pass" placeholder="Re-enter password" required/>
+                                </div>
+                            </div>
+
+                            <div class="agreement-section">
+                                <input type="checkbox" class="agreement-checkbox-input" required/>
+                                <p>I agree to the Terms of Service and Privacy Policy.</p>
+                            </div>
+
+                        </div>
+                        
+                        <button class="register-button">Register</button>
+
+                    </div>
+                    <div class="foot">
+                        <p>Already have an account? <a href="./index.html">Login here</a></p>
+                    </div>
+                </div>
+
+
+
+                
+            </div>
+        </div>
+
+        <footer>
+            <div class="section1">
+                <div class="newsletter-container">
+                    <h3>Subscribe to our Newsletter</h3>
+                    <input type="email" class="subscriber-email" placeholder="Example@gmail.com"/>
+                    <button type="button" class="subscribe-button">Subscribe</button>
+                </div>
+                <div class="links-contacts-container">
+                    <div class="quicklinks">
+                        <h3>Quick Links</h3>
+                        <ul type="none">
+                            <li>About Us</li>
+                            <li>Feed</li>
+                            <li>For Companies</li>
+                            <li>Quick Links</li>
+                        </ul>
+                    </div>
+                    <div class="contactus">
+                        <h3>Contact Us</h3>
+                        <div class="contacts">
+                            <h2>support@stuencer.com</h2>
+                            <div class="social-handles-logo">
+                                <div class="twit-logo"></div>
+                                <div class="insta-logo"></div>
+                                <div class="fb-logo"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section2">
+                <hr>
+                <div class="foot">
+                    <div class="footer-logo">
+                        <div class="logo-img"></div>
+                        <div class="logo-text">STUENCER</div>
+                    </div>
+                    <div class="cpyright">
+                        © 2025 Stuencer. All Rights Reserved.
+                    </div>
+                    <div class="footer-links">
+                        <div class="terms">Terms of Service</div>
+                        <div class="policy">Privacy Policy</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+    <script>
+        function togglePassword() {
+            const passwordInput = document.querySelector(".password");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>

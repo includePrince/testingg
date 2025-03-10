@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <div class="navbar">
+                <div class="nav-logo">
+                    <div class="logo-img"></div>
+                    <div class="logo-text">STUENCER</div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="about-btn">About Us</button>
+                    <button class="contact-btn">Contact Us</button>
+                    <button class="login-btn">Login</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="middle">
+            <div class="img-container">
+                <div class="image1"></div>
+            </div>
+            <div class="login-form-container">
+
+
+
+
+
+                <div class="login-form">
+                    <div class="intro">
+                        <h3>Welcome Back 👋🏻</h3>
+                        <p>Login to share your latest project or discover what the world of engineering is building.</p>
+                    </div>
+                    <div class="form">
+                        <div class="main-form">
+
+                            <div class="email-section">
+                                <label>Email<span style="color: red;">*</span></label>
+                                <input type="email" class="email" placeholder="Example@gmail.com" required/>
+                            </div>
+                            <div class="password-container">
+                                <div class="password-section">
+                                    <label>Password<span style="color: red;">*</span></label>
+                                    <input type="password" class="password" placeholder="Enter your password" required/>
+                                    <button type="button" class="toggle-button" onclick="togglePassword()">👁️</button>
+                                </div>
+                                <div class="pass-foot">
+                                    <div class="profile-rem">
+                                        <input type="checkbox"/>
+                                        <h5>Remember Me</h5>
+                                    </div>
+                                    <div class="frgt-pass">Forget Password?</div>
+                                </div>
+                            </div>
+                            <button class="signin-button">Sign in</button>
+                        </div>
+                        <div class="bottom-form">
+                            <div class="divider">Or</div>
+                            <button class="google-signin-button">
+                                <img class="google-logo"></img>
+                                Sign in with Google
+                            </button>
+                        </div>
+                    </div>
+                    <div class="foot">
+                        <p>New here? <a href="./register.html">Sign up</a> to start showcasing your projects.</p>
+                    </div>
+                </div>
+
+
+
+                
+            </div>
+        </div>
+
+        <footer>
+            <div class="section1">
+                <div class="newsletter-container">
+                    <h3>Subscribe to our Newsletter</h3>
+                    <input type="email" class="subscriber-email" placeholder="Example@gmail.com"/>
+                    <button type="button" class="subscribe-button">Subscribe</button>
+                </div>
+                <div class="links-contacts-container">
+                    <div class="quicklinks">
+                        <h3>Quick Links</h3>
+                        <ul type="none">
+                            <li>About Us</li>
+                            <li>Feed</li>
+                            <li>For Companies</li>
+                            <li>Quick Links</li>
+                        </ul>
+                    </div>
+                    <div class="contactus">
+                        <h3>Contact Us</h3>
+                        <div class="contacts">
+                            <h2>support@stuencer.com</h2>
+                            <div class="social-handles-logo">
+                                <div class="twit-logo"></div>
+                                <div class="insta-logo"></div>
+                                <div class="fb-logo"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section2">
+                <hr>
+                <div class="foot">
+                    <div class="footer-logo">
+                        <div class="logo-img"></div>
+                        <div class="logo-text">STUENCER</div>
+                    </div>
+                    <div class="cpyright">
+                        © 2025 Stuencer. All Rights Reserved.
+                    </div>
+                    <div class="footer-links">
+                        <div class="terms">Terms of Service</div>
+                        <div class="policy">Privacy Policy</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+    <script>
+        function togglePassword() {
+            const passwordInput = document.querySelector(".password");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>
